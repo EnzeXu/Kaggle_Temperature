@@ -42,15 +42,7 @@ class MyModel(nn.Module):
             nn.ReLU(),
             nn.Linear(100, 100),
             nn.ReLU(),
-            nn.Linear(100, 100),
-            nn.ReLU(),
-            nn.Linear(100, 50),
-            nn.ReLU(),
-            nn.Linear(50, 20),
-            nn.ReLU(),
-            nn.Linear(20, 10),
-            nn.ReLU(),
-            nn.Linear(10, 1),
+            nn.Linear(100, 1),
         )
         print("{} layers".format(len(self.fc)))
 
